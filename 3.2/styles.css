@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8375b2;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-links li a:hover {
+    color: #ffb7c2;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #9cadda;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Galería */
+.gallery-section {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    color: #8375b2;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+    justify-content: space-between; /* Distribuye el espacio entre los bloques */
+    gap: 20px; /* Espacio entre los bloques de imágenes */
+}
+
+.image-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; /* Hace que cada bloque de imagen ocupe el 100% del ancho de su contenedor */
+    max-width: 300px; /* Tamaño máximo de cada bloque */
+    text-align: center;
+    padding: 10px;
+}
+
+.image-block h3 {
+    font-size: 1rem;
+    background-color: #ffb7c2;
+    padding: 10px;
+    color: white;
+}
+
+/* Contenedor para agrupar las imágenes en filas de 3 */
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las imágenes */
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que se ajusten en varias filas si es necesario */
+}
+
+/* Ajustar las imágenes para que estén alineadas en 3 por fila */
+.image-block {
+    flex: 1 0 30%; /* Cada imagen ocupa el 30% del ancho */
+    max-width: 300px; /* Limita el tamaño máximo */
+}
+
+.main-image {
+    width: 100%;
+    max-height: 6cm; /* Tamaño ajustado */
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.stereo-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.stereo-image {
+    width: 48%;
+    height: auto;
+    max-height: 6cm; /* Tamaño ajustado */
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .image-block {
+        flex: 1 0 48%; /* En pantallas medianas, los bloques ocupan el 48% */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-block {
+        flex: 1 0 100%; /* En pantallas pequeñas, cada bloque ocupa el 100% */
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8375b2;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Centrar los títulos <h1> */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Opcional: agregar espacio debajo del título */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Opcional: para añadir algo de espacio debajo del título */
+}
